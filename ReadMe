@@ -1,0 +1,56 @@
+This is a basic extraction system in which I experiment with mulitple image and enhance the system. 
+
+
+Benefits : 
+
+1) It helps to extract text from document images.
+2) This system enhance the productive time of extracting text from an image.
+3) Ýou don't need to copy paste. You can convert text into a file for furthur use.
+
+
+# Applications:
+
+1) Document Scanner
+2) Number Plate Detection
+3) Automatic insurance documents key information extraction.
+
+
+
+How to use it ?
+
+Steps : 1
+    a) Create a instance of "Text_Extraction()"
+Steps : 2 Choose according your needs. There are three things that you will use.
+      a) Show your passed image : use instance of step 1 and call the "show_image()" function and put your image for extracrting text "path of your image/ image file"
+      b) In this function you will get text from the images use instance of step 1 and call the "text_from_images()" fucntion and put your image for extracrting text "path of your image/ image file"
+      Note : It is useful only extracted text from image. If you want to a file use "text_to_file()" funtion with "image path".
+      c) "text_to_file", This function will help you to convert a image text into a file for you future use.
+      
+      
+example : 1  (Extract Text from Image)
+
+te = Text_Extraction()
+te.text_from_image("path of your image")
+
+example : 2  (Convert Extracted Text into file)
+
+te = Text_Extraction()
+te.text_to_file("path of your image")
+
+example : 3  (Show your Passed Image)
+
+te = Text_Extraction()
+te.show_image("path of your image")
+
+
+
+
+Assumptions: 
+
+There are some assumptions which affected the Text Extraction System ans also it will give poor result.
+
+
+1) Pixels of Image : Low pixel size image will not provide a good result.
+2) Angle of Image : How much your image is tilted/angled.
+3) Noise in the Image : Noise will affected hardly to find the desecent result.
+
